@@ -218,6 +218,22 @@ def get_all_users():
     return jsonify(user_list)
 
 
+# Metodo GET users para Listar todos los usuarios
+#@app.route("/users", methods=["GET"])
+#def get_all_users():
+ #   users = User.query.all()
+ #   user_list = []
+  #  for user in users:
+  #      user_data = {
+  #          "id": user.id,
+  #          "username": user.username,
+  #          "mail": user.mail,
+  #          "suscription_date": user.suscription_date,
+  #      }
+  #      user_list.append(user_data)
+#    return jsonify(user_list)
+
+
 # Metodo Post para anadir un nuevo planeta favorito al usuario actual.
 @app.route("/favorite/planet/<int:planet_id>", methods=["POST"])
 def add_planet_favorite(planet_id):
